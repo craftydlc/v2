@@ -127,8 +127,13 @@
         }
     </style>
 </head>
-<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-<script>linkvertise(380136, {whitelist: [], blacklist: [""]});</script>
+<script type="text/javascript">
+  var app_url = 'https://shrtfly.com/';
+  var app_api_token = '91c9b3d10f25ac4b74e790834548164d';
+  var app_advert = 1;
+  var app_exclude_domains = [];
+</script>
+<script src='https://shrtfly.com/js/full-page-script.js'></script>
 <body>
     <input 
         type="text" 
@@ -154,32 +159,12 @@
 
     <div id="mainSection">
         <div class="section">
-            <div class="section-title">Minecraft</div>
-            <div class="clickable" onclick="showSection('shadersSection')">Shaders</div>
-            <div class="clickable" onclick="showSection('patchedSection')">Patched</div>
-            <div class="clickable" onclick="showSection('betterrdSection')">BetterRD</div>
-            <div class="clickable" onclick="showSection('clientsSection')">Clients</div>
-        </div>
-
-        <div class="section">
             <div class="section-title">Marketplace</div>
             <div class="clickable" onclick="showSection('mapsSection')">Maps</div>
             <div class="clickable" onclick="showSection('addonsSection')">Addons</div>
             <div class="clickable" onclick="showSection('mashupsSection')">Mashups</div>
             <div class="clickable" onclick="showSection('packsSection')">Packs</div>
             <div class="clickable" onclick="showSection('skinsSection')">Skins</div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Private</div>
-            <div class="clickable" onclick="showSection('privateAddonsSection')">Addons</div>
-        </div>
-
-        <div class="section">
-            <div class="section-title">Public</div>
-            <div class="clickable" onclick="showSection('publicWorldsSection')">Worlds</div>
-            <div class="clickable" onclick="showSection('publicAddonsSection')">Addons</div>
-	    <div class="clickable" onclick="showSection('publicPacksSection')">Packs</div>
         </div>
     </div>
 
