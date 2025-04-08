@@ -127,8 +127,20 @@
         }
     </style>
 </head>
-<script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script>
-<script>linkvertise(1299541, {whitelist: [], blacklist: [""]});</script>
+<script>
+(() => {
+  function loadScript(url, callback) {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = url;
+    script.onload = callback;
+    document.head.appendChild(script);
+  }
+  loadScript("https://cdn.work.ink/js/workink-sitescript.js", function() {
+    workink("https://work.ink/1XMy/m989pgli", [], []);
+  });
+})();
+</script>
 <body>
     <input 
         type="text" 
